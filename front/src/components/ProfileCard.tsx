@@ -1,23 +1,27 @@
 import React from "react";
+import { Row, Col } from "react-bootstrap";
 import CardHeader from "./CardHeader";
 
 const ProfileCard = () => {
   return (
-    <div>
+    <Row>
       <CardHeader header="Who are you?" subtitle="93.01.21" />
-      <div
-        className="card-wrapper"
-        style={{ display: "flex", justifyContent: "center" }}
-      >
-        <div style={{ float: "left" }}>
-          <img src="/images/profile.jpg" alt="profile" />
+      <Col lg={4} sm={12}>
+        <div
+          className="card-wrapper"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <div style={{ float: "left" }}>
+            <img src="/images/profile.jpg" alt="profile" />
+          </div>
         </div>
+      </Col>
+      <Col lg={8} sm={12}>
         <div
           style={{
             float: "left",
             lineHeight: "140%",
             wordSpacing: 4,
-            marginLeft: "4rem",
             textAlign: "center",
             fontSize: "1.3rem",
             fontFamily: "SansNeo",
@@ -35,8 +39,8 @@ const ProfileCard = () => {
           아이디어를 실현 시키는 일도 도전해보고 싶습니다. <br />" 소통하고,
           이해하는 개발을 꿈꾸는 개발자 채성렬이었습니다. "
         </div>
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 };
 
