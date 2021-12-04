@@ -4,6 +4,7 @@
 1. 프론트엔드는 React Bootstrap Styled-Components 가 사용되었습니다.
 2. 배포는 AWS EC2 , Route53 을 이용하여 진행되었습니다.
 
+## 기능 목록
 - [X] 간단한 개인 이력
 - [X] 나의 기술 정리
 - [X] 포트폴리오 목록 및 링크
